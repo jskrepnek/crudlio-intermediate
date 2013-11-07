@@ -1,0 +1,45 @@
+<h2>Create/Edit Student</h2>
+<form ng-submit="save()" name="editForm" role="form">
+
+  <div class="form-group">
+    <label class="control-label">First Name</label>
+    <input class="form-control" type="text" name="firstName" ng-model="student.firstName" autofocus required>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label">Last Name</label>
+    <input class="form-control" type="text" name="lastName" ng-model="student.lastName" required>
+  </div>
+
+  <div class="form-group">
+    <div class="radio">
+      <label class=".radio-inline">
+        <input type="radio" name="gender" value="Male" ng-model="student.gender" checked required>Male
+      </label>
+    </div>
+    <div class="radio">
+      <label class=".radio-inline">
+        <input type="radio" name="gender" value="Female" ng-model="student.gender" required>Female
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label">Date of Birth</label>
+    <input class="form-control" type="date" name="dateOfBirth" ng-model="student.dob" required>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label">Id</label>
+    <input class="form-control" type="number" name="id" ng-model="student.id" required>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label">Desk</label>
+    <input class="form-control" type="number" name="desk" ng-model="student.desk" required>
+  </div>
+
+<button type="submit" class="btn btn-primary">Save</button>  
+  <a href="#/" class="btn">Cancel</a>
+
+</form>
